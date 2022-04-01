@@ -1,0 +1,17 @@
+{
+  "name": "store-ui-test",
+  "version": "1.0.0",
+  "description": "1. Able to see a set (does this mean \"static\" or \"user set\") number of products (between 10 to 20) in a grid system.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon src/productsAPI.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}

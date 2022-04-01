@@ -1,0 +1,169 @@
+* {
+  margin: 0 0;
+  box-sizing: border-box;  
+}
+html {
+  font-family: 'Archivo', sans-serif;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app .app-header {
+  height: 3rem;
+  padding: 0.5rem 0;
+  text-align: left;
+  display: flex;
+}
+
+#app .app-header img {
+  display: block;
+  margin: 0 auto;
+  max-height: 3rem;
+}
+
+#app .app-body {
+  border-top: 0.1rem solid #E0E0E0;
+  display: block;
+  margin: 0.5rem auto;
+  width: 100vw;
+}
+
+
+.products-container {
+  width: 100%;
+}
+
+.products {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.product {
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.product .image_wrapper {
+  width: 100%;
+}
+
+.image_wrapper img {
+  max-width: 100%;
+}
+
+
+/* Mobile */
+/* @media (max-width: 480px) {
+  .product {
+    max-width: 90%;
+    min-width: 90%;
+    margin: 0 auto;
+  }
+} */
+.product {
+  margin: 0 auto;
+}
+
+
+/* Laptop */
+@media (min-width: 769px) {
+  .product {
+    width: 30%;
+  }
+}
+/* Desktop */
+@media (min-width: 1025px) {
+  .product {
+    width: 17%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .product {
+    min-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .product {
+    width: 95%;
+  }
+}
+
+
+.product_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#modal_product_content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50vw; /* Could be more or less, depending on screen size */
+  border-radius: 5px;
+}
+
+.product_modal.active {
+  display: block; /* Hidden by default */
+}
+
+
+div.pagination ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 4rem;
+}
+
+.pagination_button {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(207, 207, 207);
+  color: black;
+  border-radius: 1px;
+  padding: 5px 5px;
+  text-align: center;
+  margin-left: 1pt;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.pagination_button.active {
+  background-color: blue;
+  color: white;
+}
+
+.modal_product_image_container {
+  width: 45%;
+}
+
+.modal_product_details {
+  width: 45%;
+}
+
+.modal_header {
+  display: flex;
+}
+
+#modal_product_name {
+  font-weight: bold;
+}
